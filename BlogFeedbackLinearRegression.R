@@ -1,7 +1,7 @@
 library(caret)
 library(ggplot2)
 
-sample <- read.csv("C:\\Users\\Patryk\\Downloads\\BlogFeedback\\blogData_train.csv", header =  FALSE)
+sample <- read.csv("BlogFeedback\\blogData_train.csv", header =  FALSE)
 
 colnames(sample)
 summary(sample[51:54])
@@ -40,8 +40,8 @@ par(mfrow=c(1,1))
 corrplot(correlations, method="circle")
 
 
-train <- read.csv("C:\\Users\\Patryk\\Downloads\\BlogFeedback\\blogData_train.csv", header =  FALSE)
-test <- read.csv("C:\\Users\\Patryk\\Downloads\\BlogFeedback\\blogData_test-2012.02.01.00_00.csv", header =  FALSE)
+train <- read.csv("BlogFeedback\\blogData_train.csv", header =  FALSE)
+test <- read.csv("BlogFeedback\\blogData_test-2012.02.01.00_00.csv", header =  FALSE)
 
 summary(train)
 
